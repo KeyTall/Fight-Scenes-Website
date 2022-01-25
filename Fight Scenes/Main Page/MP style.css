@@ -1,0 +1,192 @@
+body {background: white;}
+
+/*grid*/
+.LAYOUT {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 125% 75% 300% 40%;}
+
+/*INTRO SECTION*/
+.TOP-MENU{grid-row: 1;}
+/*Main Image and Title*/
+.main-img-title img {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 125%;
+	object-fit: cover;}
+
+
+.main-img-title h1 {
+	position: absolute;
+	font-family: Arial;
+	font-weight: bold;
+	white-space: nowrap;
+	top: 10%;
+	left:5%;
+	color: white;
+	font-size: 10vw;}
+
+/*Navigation Bar*/
+.nav-window, .grid-nav {
+	position: fixed;
+	right:-18%;
+	top:26%;
+	transition: .8s ease;}
+
+.nav-window {
+	width: 20%;
+	height: 50%;}
+ 
+ /*creates overlayed grid ontop of navigation window in sync with img hovering animations*/
+.grid-nav {
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	width: 15%;
+	height: 45%;}
+
+.nav-window img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;}
+
+.nav-window a {
+	position: relative;
+	right:-2%;
+	color:#ADADAD;
+	font-size:2.1vw;
+	font-family: Helvetica;
+	text-decoration: none;
+	transition: .2s ease;}
+
+#section1 {grid-row:1;}
+#section2 {grid-row:2;}
+#section3 {grid-row:3;}
+#section4 {grid-row:4;}
+
+.nav-window:hover, .nav-window:hover >.grid-nav {right:0;}
+.nav-window a:hover {color:white; font-weight:bold;}
+
+/*QUOTE SECTION*/ /*fix later*/
+.QUOTE{
+	grid-row: 2;
+}
+/*Quotes*/
+#jackie-quote {
+	position: absolute;
+	right:2%;
+	font-size: 3.5vw;
+	color: #2A2A2A;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;}
+
+#jackie-quote > #signature {
+	position: absolute;
+	font-style: italic;
+	font-size: 3vw;
+	white-space: nowrap;
+	color: #2A2A2A;
+	right:5%;}
+	
+#captain-america-quote {
+	position: relative;
+	right:35%;
+	top:40%;
+	font-size: 3.5vw;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: center;}
+	
+#captain-america-quote > #part {
+	position:absolute;
+	text-align: right;
+}
+
+#captain-america-quote > #signature {
+	position:relative;
+	left: 20%;
+	font-size: 3vw;
+	font-style: italic;}
+
+/*Triangle*/
+#triangle {
+	position: absolute;
+	left:0;
+	top:125%;
+	width: 0; 
+	height: 0; 
+	border-right: 95vw solid transparent;
+	border-bottom: 75vh solid #FF8000;}
+
+	
+/*FIGHT SCENES*/
+.FIGHT-SCENES{
+	grid-row: 3;
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;}
+	
+.commentary {grid-column: 2;}
+
+.FIGHT-SCENES iframe {
+	position: relative;
+	grid-column: 1;
+	top: 15%;
+	left: 10%;
+	width: 84.7%;
+	height: 67%;}
+
+.FIGHT-SCENES h2 {
+	position: relative;
+	top: 4%;
+	font-family: Arial;
+	font-size: 4vw;
+	color: #5A5A5A;}
+
+.FIGHT-SCENES p {
+	position: relative;
+	font-family: Verdana;
+	font-size: 2.3vw;
+	font-weight: bold;
+	width: 80%;
+	color: #777777;}
+
+/*Old Boy*/
+.oldboy-section {
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+/*shang-chi-section*/
+.shang-chi-section {
+	background:#FF8000;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.shang-chi-section p, .shang-chi-section h2 {color:white;}
+
+/*3*/
+.jackie-chan-section {
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+/*4*/
+.captain-america-section {
+	grid-row: 4;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background:#FF8000;}
+
+.captain-america-section p, .captain-america-section h2 {color:white;}
+
+.FOOTER {grid-row:4;}
+.FOOTER a {	bottom:-425%;}

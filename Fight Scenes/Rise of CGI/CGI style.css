@@ -1,0 +1,140 @@
+body {background: white;}
+
+
+.LAYOUT {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 125% 160% 40%;}
+
+/*TOP MENU'*/
+.TOP-MENU {
+	grid-row:1;
+	display: grid;
+	grid-template-rows: 25% 50% 25%;
+	background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(255,128,0,1) 50%, rgba(255,255,255,0) 90%);}
+
+/*Question*/
+.TOP-MENU #question {
+	position: absolute;
+	right:30%;
+	top: 20%;
+	color: #444444;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 3vw;
+	line-height: 150%;}
+
+.TOP-MENU p > #past {
+	position: relative;
+	color: #888888;
+	right:-75%;
+	white-space: nowrap;}
+
+/*Main Title*/
+.main-title {
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,0) 4%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(255,255,255,0) 96%);
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.main-title h2 {
+	position: relative;
+	font-family: Arial;
+	font-size: 21vw;
+	text-align: center;
+	font-weight: bold;
+	top:-25%;
+	right: 0%;}
+	
+#special:hover ~#cgi{background: white; color: #222222;}
+#special:hover {background: #181818; color: white;}
+
+#cgi {background: #181818; color: white; grid-column: 2; padding-left: 3%;}
+#special {background: white; color: #222222; grid-column:1; padding-right: 3%;}
+
+
+/*COMPARE AND CONTRAST*/
+.COMPARE-CONTRAST{
+	grid-row:2;
+	display: grid;
+	grid-template-rows:50% 50%;
+	grid-template-columns: 50% 50%;}
+
+/*visual Effects*/
+#iron {
+	grid-row:1; 
+	grid-column:1;
+	position: relative;
+	top: 5%;
+	width:90%;
+	height:90%;
+	object-fit: contain;}
+	
+.vfx-text {grid-row: 1; grid-column:2;}
+
+.vfx-text img {
+	position: relative;
+	right: 50%;
+	top: 10%;
+	height: 80%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.vfx-text p {
+	position: relative;
+	width: 70%;
+	height: auto;
+	color: #FF8000;
+	font-family: Helvetica;
+	font-size: 3vw;
+	right: -5%;
+	top: -75%;
+}
+
+/*Special Effects*/
+#bruce {
+	grid-row:2; 
+	grid-column:1;
+	position: relative;
+	right: -20%;
+	top: 20%;
+	width:70%;
+	height:70%;
+	object-fit: contain;
+	transform: scaleX(-1);
+}
+
+.sfx-text {grid-row: 2; grid-column:2;}
+
+.sfx-text img {
+	position: relative;
+	right: 40%;
+	top: 30%;
+	height: 90%;
+	width: 90%;
+	object-fit: contain;
+}
+
+.sfx-text p {
+	position: relative;
+	width: 70%;
+	height: auto;
+	color: #FF8000;
+	font-family: Helvetica;
+	font-size: 3vw;
+	top: -65%;
+	right: -20%;
+}
+
+.sfx-text p>#left {position: relative; right:20%;}
+.sfx-text p>#center {position: relative; right:15%;}
+.sfx-text p>#right {position: relative; right:10%;}
+
+.FOOTER {grid-row:3;}
+.FOOTER a {	bottom:-210%;}

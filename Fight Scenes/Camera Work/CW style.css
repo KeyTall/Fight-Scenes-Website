@@ -1,0 +1,104 @@
+body {background: white;}
+
+.LAYOUT {
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	display:grid;
+	grid-template-rows: 110% 100% 40%;}
+
+/*TOP MENU*/
+.TOP-MENU {
+	grid-row:1;
+	display: grid;
+	grid-template-rows: 25% 50% 25%;
+	background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 82%);}
+
+.main-text {
+	grid-row: 2;
+	background: black;}
+
+.main-text h1 {
+	position: relative;
+	top:-5%;
+	font-size: 12vw;
+	font-family: Arial;
+	text-align: center;
+	background-image: url("avengers.png");
+	background-size: auto 100%;
+	color: transparent;
+	-webkit-background-clip: text;}
+
+/*MAIN*/
+.MAIN {
+	grid-row:2;
+	display: grid;
+	grid-template-rows: 50% 50%;}
+
+.MAIN h2 {
+	color: #222222;
+	position: relative;
+	font-family: Arial;
+	font-size: 3vw;
+	width: 175%;
+	left: -5%;}
+
+.MAIN p {
+	color: #444444;
+	position: relative;
+	left: -104%;
+	font-family: Arial;
+	font-size:2.5vw;
+	width: 170%;}
+
+.MAIN iframe {
+	position: relative;
+	left: 10%;
+	width:74%; 
+	height:90%;}
+
+/*Jenky Cam*/
+.jenky-camera-work {
+	grid-row:1;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.video {
+	grid-column: 1;}
+
+.jenky-camera-work #box {
+	position: absolute;
+	top: 100%;
+	left: 2%;
+	width: 30%;
+	height: 50%;
+	background: #FF8000;}
+
+.jenky-text {
+	grid-column:2;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.jenky-text h2 {top: -5%;}
+.jenky-text p {top: 15%;}
+
+/*Smooth Cam*/
+.smooth-camera-work {
+	grid-row:2;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.smooth-camera-work iframe {grid-column: 1; top: 21%;}
+
+.smooth-text {
+	grid-column:2;
+	display: grid;
+	grid-template-columns: 50% 50%;}
+
+.smooth-text h2 {top: 15%;}
+.smooth-text p {top: 35%;}
+
+.FOOTER {grid-row:3;}
+.FOOTER a {	bottom:-135%;}

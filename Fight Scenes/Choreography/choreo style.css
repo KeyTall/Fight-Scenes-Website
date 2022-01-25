@@ -1,0 +1,103 @@
+body {background: white;}
+
+/*grid*/
+.LAYOUT {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 125% 100% 30% 40%;}
+
+/*TOP MENY*/
+.TOP-MENU {
+	grid-row: 1; 
+	background-image: url("backdrop.png"); 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: 100%;}
+	
+	
+.TOP-MENU h1 {
+	color: black;
+	font-family: Arial;
+	font-size: 10vw;
+	margin: 17% 3%;
+	padding: 0%;
+	background-color: white;
+	text-align: center;
+	padding: 3%;
+	mix-blend-mode: screen;}
+
+/*Burger Menu Edits*/
+.burger-menu img{filter:invert(1);}
+.burger-menu {background: rgba(255,255,255,0.9) !important;}
+.burger-menu:hover {background: #3D3D3D !important;}
+.burger-menu:hover >img {filter:invert(0);}
+
+/*MAIN*/
+.MAIN {
+	grid-row:2;
+	display: grid;
+	grid-template-rows: 50% 50%;
+}
+
+.MAIN iframe {
+	margin: 5% 5%;
+	width: 77%;
+	height: 77%;
+	z-index: 1;
+}
+
+.MAIN h1 {
+	margin: 4% 0;
+	font-family: Arial;
+	font-size: 3vw;
+}
+
+.MAIN p {
+	margin: 4% 0;
+	font-family: Arial;
+	width: 77%;
+	font-size: 2.2vw;
+}
+
+/*Kakshi*/
+.kakashi {
+	margin-top: 5%;
+	grid-row:1;
+	display: grid;
+	grid-template-columns: 45% 55%;
+}
+
+.kakashi .text {
+	grid-column: 2;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.kakashi img {
+	position: absolute;
+	width: 10%;
+	left:31%;
+	top:125%;
+	z-index: 0;
+}
+
+/*Fight2*/
+.karate-kid {
+	margin-top: 15%;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 45% 55%;
+}
+
+.karate-kid .text {
+	grid-column: 2;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+	
+.FOOTER {grid-row:4;}
+.FOOTER a {	bottom:-180%;}

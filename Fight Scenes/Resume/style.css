@@ -1,0 +1,305 @@
+body {
+	background: white;
+	margin:0;
+	display: grid;
+	grid-template-rows: 20% auto;
+	grid-template-columns: 32.2% 30% auto;
+}
+
+/*HEADER*/
+.HEADER {
+	grid-row: 1; 
+	grid-column: span 3;
+	background: #355C5F;
+	display: grid;
+	grid-template-rows: 70% 30%;
+}
+
+.HEADER h1 {
+	grid-row: 1;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	font-size: 5vw;
+	margin: 0;
+	padding-top: .5%;
+}
+
+.contact {
+	grid-row: 2;
+	background: #BBBBBB;
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: 33.3% 33.3% auto;
+}
+
+.contact p {
+	font-family: arial;
+	color: #414141;
+	font-size: 1.2vw;
+	text-align: center;
+	margin: 0;
+	padding: 2.5%;
+}
+
+#address {grid-column:1; border-right: 1.1vw solid white;}
+#phone {grid-column:2; border-right: 1.1vw solid white;}
+#email {grid-column:3;}
+
+/*LEFT BAR*/
+.LEFT-BAR {
+	grid-column: 1;
+	grid-row: 2;
+	display: grid;
+	grid-template-rows: 50% 50%;
+}
+
+/*technical skills*/
+.technical-skills {
+	background: #E7FDFF;
+	grid-row: 1;
+	display: grid;
+	grid-template-rows: 25% 75%;
+	grid-template-columns: 45% 55%;
+	border-bottom: .5vw solid black;
+}
+
+.technical-skills h1 {
+	grid-column: span 2;
+	font-family: Arial;
+	padding: 4% 0 0 4%;
+	margin:0;
+	color: #363636;
+	font-size: 3vw;
+}
+
+.technical-skills ul {
+	grid-column:1;
+	grid-row:2;
+	font-family: Helvetica;
+	margin:0;
+	color: #444444;
+	padding: 5% 0 0 11%;
+	line-height: 225%;
+	font-size: 1.3vw;
+	list-style: none;
+}
+
+#items {
+	grid-column: 2;
+	font-size: 1.1vw;
+	line-height: 265%;
+}
+
+/*Scholarships*/
+.awards {
+	grid-row: 2;
+	background: #9EE1E5;
+	display: grid;
+	grid-template-rows: 25% 75%;
+	border-top: .5vw solid black;
+}
+
+.awards h1 {
+	font-family: Arial;
+	grid-row: 1;
+	margin: 0;
+	color: #333333;
+	padding: 4% 0 0 4%;
+	font-size: 3vw;
+}
+
+.awards ul {
+	grid-row:2;
+	font-family: Helvetica;
+	margin:0;
+	color: #222222;
+	padding: 2% 0 0 5%;
+	font-size: 1.1vw;
+	list-style: none;
+}
+
+.awards ul li {padding: 2% 0;}
+
+/*MAIN*/
+.MAIN {
+	grid-row: 2;
+	grid-column: 2;
+	display:grid;
+	grid-template-rows: 50% 50%;
+}
+
+/*Education*/
+.education {
+	grid-row:1; 
+	grid-column:1;
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	border-bottom: .5vw solid black;
+}
+
+.education h1 {
+	grid-row: 1;
+	font-family: arial;
+	margin: 0;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 2.5vw;
+}
+
+.uni {grid-row: 2;}
+.highschool {grid-row:3;}
+.homeschool {grid-row:4;}
+
+.education p {
+	font-family: arial;
+	margin: 0 0;
+	padding: 3% 0 0 5%;
+	font-size: 1.2vw;
+}
+
+.education ul {
+	font-family: Helvetica;
+	margin:0;
+	padding: 1% 0 0 30%;
+	font-size: 1vw;
+}
+
+.education #location {font-size: .9vw;}
+
+/*References*/
+.references{
+	grid-row:2; 
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: 30% 35% 35%;
+	border-top: .5vw solid black;
+}
+
+.references h1 {
+	grid-row: 1;
+	font-family: arial;
+	margin: 0;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 2.5vw;
+}
+
+.ref1 {grid-row:2;}
+.ref2 {grid-row:3;}
+
+.references h2 {
+	font-family: arial;
+	margin: 0;
+	padding-left: 10%;
+	font-size: 1.2vw;
+}
+
+.references ul {
+	font-family: Helvetica;
+	margin: 0;
+	font-size: 1vw;
+	padding-left: 25%;
+}
+
+/*Experience*/
+.EXPERIENCE {
+	grid-row: 2;
+	grid-column: 3;
+	display: grid;
+	grid-template-rows: 15% 42.5% 42.5%;
+	border-left: 1vw solid black;}
+
+.experience h1 {
+	grid-row: 1;
+	font-family: arial;
+	margin: 0;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 2.5vw;
+}
+
+.one {grid-row: 2;}
+.two {grid-row: 3;}
+
+.experience h2 {
+	font-family: arial;
+	margin: 0;
+	font-size: 1.2vw;
+	text-align: center;
+}
+
+.experience p {
+	font-family: Helvetica;
+	font-size: 1vw;
+	text-align: center;
+}
+
+.experience ul {
+	font-family: Helvetica;
+	font-size: 1.1vw;
+}
+
+.experience li {
+	padding: 1% 0;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		grid-template-rows: 20% 80% 80%;
+		grid-template-columns: 50% auto;}
+	
+	/*header*/
+	.HEADER {grid-column: span 2;}
+	.HEADER h1 {padding-top: 3%;}
+	
+	.contact p {font-size: 1.7vw; padding-top: 5%;}
+	
+	/*LEFT-BAR*/
+	.LEFT-BAR {grid-row: 2;}
+	
+	.technical-skills h1 {font-size: 4vw;}
+	.technical-skills ul {font-size: 2vw;}
+	#items {font-size: 1.7vw;}
+	
+	.awards h1 {font-size: 4vw;}
+	.awards ul {font-size: 1.7vw;}
+	
+	/*main*/
+	.MAIN {grid-row: 2;}
+	
+	/*education*/
+	.education {grid-template-rows: 20% 26.6% 26.6% auto;}
+	.education h1 {padding-top: 2.5%;}
+	
+	.education p {
+		font-size: 2vw;
+		padding: 0 0 0 5%;}
+	
+	.education ul {
+		padding: .5% 0 0 30%;
+		font-size: 2vw;}
+	
+	/*references*/
+	.references {grid-template-rows: 20% 40% 40%;}
+	.references h1 {padding-top: 2.5%;}
+	.references h2 {font-size: 2vw;}
+
+	.references ul {
+		font-size: 1.7vw;
+		padding-top: 1%;}
+	
+	/*experience*/
+	.EXPERIENCE {
+		grid-column: span 2;
+		grid-row: 3;
+		border-top: 1vw solid black;
+		border-left: none;
+		grid-template-rows: 15% 43% 43%;
+	}
+	
+	.experience h1 {padding: 2%; font-size: 4vw;}
+	.experience h2 {font-size:2.7vw;}
+	.experience ul {text-align:center; font-size: 2vw; list-style: none;}
+	.experience p {font-size: 2vw;}
+}

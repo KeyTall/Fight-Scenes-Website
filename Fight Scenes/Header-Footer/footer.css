@@ -1,0 +1,33 @@
+/*FOOTER*/
+.FOOTER {
+	display: grid;
+	grid-template-rows: auto 30% 15%;}
+
+.FOOTER a {
+	position: absolute;
+	right:1%;
+	color: #FF8000;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 2vw;
+	text-decoration: none;
+	transition: .2s ease;}
+	
+.FOOTER a:hover {font-size:2.2vw}
+
+#fill {
+	grid-row:2;
+	background: #5A5A5A;}
+
+#name {
+	grid-row:3;
+	background: #2F2F2F;}
+
+#name p {
+	position: relative;
+	top:-55%;
+	color: #9F9F9F;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: center;}
